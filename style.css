@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(243, 235, 235, 0.5), rgba(247, 244, 244, 0.5)), url(img/5ioz5q.jpg);
+    background-repeat: no-repeat;
+    min-height: 510px;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.game__name {
+    size: 50px;
+    color: #44a;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rules__button, .escape__button, .game__start {
+    background-color: #44a;
+    size: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.game__start {
+    clear: both;
+}
+
+.players__and__rounds {
+    display: flex; /*после выбора кол-ва игроков и раундов и нажатия кнопки "Играть" переключается в режим none*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.players, .rounds {
+    margin: 0 20px;
+}
+
+.game__options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game__area {
+    display: none; /* после нажатия кнопки "Играть" переходит в режим flex */
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.task__area {
+    display: flex;
+    justify-content: center;
+}
+
+.new__task {
+    width: 50px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #66a;
+    size: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.task__area p {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px 25px;
+    background-color: rgba(172, 172, 89, 0.933);
+}
+
+.player__answers__area {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.players__answer {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.send__answer {
+    padding: 5px 8px;
+}
+
+.players__results {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.single__player {
+    width: 200px;
+    background-image: url(img/paper_sheet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    height: 180px;
+    margin: 30px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.active__player h4 {
+    color: red;
+}
+
+.name__score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name__score h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.answers__list {
+    max-height: 80px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.city__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* названия городов в карточке игрока */
+.city__name h5 {
+    font-family: 'Bad+Script';
+    size: 10px;
+}
+
+.city__name p {
+    margin-right: 5px;
+}
+
+.game__rules__detailed {
+        display: none;
+        position: fixed;
+        margin: 200px auto;
+        max-width: 600px;
+        background-color: #1102aa;
+        padding: 15px;
+}
+
+.close__rules {
+    background-color: #fff;
+    size: 20px;
+    color: #535333;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.winner__notification {
+    display: none;
+    position: fixed;
+    margin: 200px auto;
+    max-width: 600px;
+    background-color: #1102aa;
+    padding: 15px;
+}
